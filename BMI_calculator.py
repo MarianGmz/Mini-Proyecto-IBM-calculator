@@ -16,8 +16,7 @@ try:
          imc = peso/(altura**2)
     elif formato == "Fts":
         altura = st.number_input("Pies")
-        altura = altura*0.3048
-        imc = peso/(altura**2)
+        imc = peso / (((altura/3.28))**2)
 except Exception as e:
     st.info("Coloque los datos correspondientes")
 calcular = st.button("Calcular")
