@@ -10,11 +10,11 @@ try:
     if formato ==  "Mts":
         altura = st.number_input("Metros")
         imc = peso/(altura**2)
-    elif formato == "Cms":
+    elif formato == "Cm":
          altura = st.number_input("Centimetros")
          altura = altura/100
          imc = peso/(altura**2)
-    elif formato == "Fts":
+    elif formato == "Ft":
         altura = st.number_input("Pies")
         imc = peso / (((altura/3.28))**2)
 except Exception as e:
