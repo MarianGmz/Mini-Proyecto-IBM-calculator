@@ -4,16 +4,16 @@ st.title("Bienvenido a la Calculadora IMC")
 
 peso = st.number_input("Ingrese su peso(kgs)")
 
-formato = st.radio("Seleccionar formato de altura ",("Mts","Cms","Fts"))
+formato = st.radio("Seleccionar formato de altura ",("Mts","Cm","Ft"))
 
 try:
     if formato ==  "Mts":
         altura = st.number_input("Metros")
         imc = peso/(altura**2)
     elif formato == "Cm":
-         altura = st.number_input("Centimetros")
-         altura = altura/100
-         imc = peso/(altura**2)
+        altura = st.number_input("Centimetros")
+        altura = altura/100
+        imc = peso/(altura**2)
     elif formato == "Ft":
         altura = st.number_input("Pies")
         imc = peso / (((altura/3.28))**2)
